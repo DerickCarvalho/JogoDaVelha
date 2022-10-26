@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="container flex">
+        <div class="corpo flex">
+            <div id="firstScreen" class="telaInicial">
+                <h1 id="firstTitle">Jogo da Velha</h1>
+
+               <div class="botoes">
+                    <input type="text" name="" id="player1" placeholder="Jogador1 [O]" maxlength="20">
+                    <input type="text" name="" id="player2" placeholder="Jogador2 [X]" maxlength="20">
+                    <button id="start">Jogar</button>
+               </div>
+            </div>
+
+            <div id="gameScreen" class="jogo">                   
+                <div class="table">
+                    <h1 id="l0c0" style="border-top: 0; border-left:0;"></h1> <h1 id="l0c1" style="border-top: 0;"></h1> <h1 id="l0c2" style="border-top: 0; border-right:0;"></h1>
+                    <h1 id="l1c0" style="border-left:0;"></h1> <h1 id="l1c1"></h1> <h1 id="l1c2" style="border-right:0;"></h1>
+                    <h1 id="l2c0" style="border-bottom: 0; border-left:0;"></h1> <h1 id="l2c1" style="border-bottom: 0;"></h1> <h1 id="l2c2" style="border-bottom: 0; border-right:0;"></h1>
+
+                    <div class="controles">
+                        <button id="play">INICIAR</button> <button id="scoreboard">PLACAR</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <script src="./assets/js/funcionalidade.js"></script>
+    
+    <div class="creditos">
+        <p>&copy;DerickCarvalho 2022.2</p>
+        <p>Versão 1.0.0 - 26/10/2022</p>
+    </div>
+</body>
+</html>
